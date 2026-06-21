@@ -1,3 +1,23 @@
+/**
+ * PRONTUÁRIO DE GERIATRIA — CEMPRE / HSE-PE
+ * Backend em Google Apps Script + Google Sheets
+ *
+ * COMO USAR:
+ * 1. Crie uma planilha nova no Google Sheets (sheets.new)
+ * 2. Vá em Extensões > Apps Script
+ * 3. Apague o conteúdo padrão e cole TODO este arquivo
+ * 4. Salve (ícone de disquete) e dê um nome ao projeto (ex: "Prontuario API")
+ * 5. Clique em "Implantar" > "Nova implantação"
+ * 6. Tipo: "App da Web"
+ *    - Executar como: Eu (seu e-mail)
+ *    - Quem pode acessar: Qualquer pessoa
+ * 7. Clique em "Implantar", autorize as permissões pedidas
+ * 8. Copie a "URL do app da Web" gerada — essa é a API_URL que o site vai usar
+ *
+ * Toda vez que você editar este código, é preciso criar uma NOVA implantação
+ * (ou editar a implantação existente) para as mudanças entrarem em vigor.
+ */
+
 const SHEET_NAME = "pacientes";
 const HEADER = ["id", "createdAt", "updatedAt", "data_json"];
 
